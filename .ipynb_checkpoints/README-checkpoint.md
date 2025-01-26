@@ -3,11 +3,6 @@ Rejoice OpenCV users, a lightweight neuroimaging .nii to .png converter that act
 
 Now supports both Python3 and Matlab 2017b!
 
-```
-python3 python/nii2png.py -i /data1/hf_model/lxdata/Dataset504_IMAGECAS/labelsTs -o /data1/home/lixiang/COSTA/labels  --bit-depth 16 --rotate 90 --verbose
-```
-
-
 ## Environment
 * Python 3.7 (or Matlab 2017b)
 
@@ -129,23 +124,3 @@ with long options
 ```
 $ python3 /users/ernie/images/nii2png.py --input /users/ernie/images/brain.nii --output /users/ernie/images/png/
 ```
-
-
-
-python3 python/nii2png.py -i /data1/home/lixiang/COSTA/data/nnUNet_raw/Dataset502_TOPCOW-mr/imagesTr -o /data1/home/lixiang/COSTA/imgs
-
-
-python3 python/nii2png.py -i /data1/hf_model/lxdata/Dataset504_IMAGECAS/imagesTr -o /data1/home/lixiang/COSTA/imgs  --bit-depth 8 --rotate 90 --verbose --normalize linear
-
-python3 python/nii2png.py -i /data1/hf_model/lxdata/Dataset504_IMAGECAS/imagesTs -o /data1/home/lixiang/COSTA/imgs  --bit-depth 9 --rotate 90 --verbose --normalize linear
-
-
-python3 python/nii2png.py -i /data1/hf_model/lxdata/Dataset504_IMAGECAS/labelsTr -o /data1/home/lixiang/COSTA/labels  --bit-depth 16 --rotate 90 --verbose
-
-python3 python/nii2png.py -i /data1/hf_model/lxdata/Dataset504_IMAGECAS/labelsTs -o /data1/home/lixiang/COSTA/labels  --bit-depth 16 --rotate 90 --verbose
-
-python3 python/nii2png.py -i /data1/home/lixiang/COSTA/COSTA-Dataset-v1/labelsTr/ADAM -o /data1/home/lixiang/COSTA/temp  --bit-depth 16 --rotate 90 --verbose
-
-find . -type f -exec cp -f {} /data1/home/lixiang/vessel_lm/datasets/OCTA-500/OCTA_Cardio/ProjectionMaps/OCTA\(FULL\)/ \;
-
-find . -type f -exec cp -f {} /data1/home/lixiang/vessel_lm/datasets/OCTA-500/OCTA_Cardio/GT_LargeVessel/ \;
